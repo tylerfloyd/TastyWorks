@@ -1,0 +1,32 @@
+{
+    "name": "tastyworks",
+    "version": "0.1.0",
+    "description": "NodeJS API wrapper for Tastyworks API",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tylerfloyd/TastyWorks.git"
+    },
+    "keywords": [
+        "tasty works",
+        "tasty trade",
+        "api",
+        "trading",
+        "stock",
+        "options",
+        "finance"
+    ],
+    "author": "Tyler Floyd",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tylerfloyd/TastyWorks/issues"
+    },
+    "homepage": "https://github.com/tylerfloyd/TastyWorks",
+    "engines": {
+        "node": ">=6.0.0"
+    },
+    "dependencies": {
+        "superagent": "^4.0.0"
+    }
+}
