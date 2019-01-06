@@ -1,4 +1,6 @@
 # Tastyworks Node API
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks?ref=badge_shield)
+
 
 NodeJS Framework for basic account information, balances, positions and orders with [TastyWorks's](https://www.tastyworks.com/) private API. This API has been reversed engineered. The stability and accuracy of this API cannot be garunteed.
 
@@ -117,3 +119,7 @@ TastyWorks.history('ACCOUNT_ID', '2018-01-01', '2018-01-05').then(history => con
 - Position groupings
 - Fetch news for an equity
 - Current option prices
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks?ref=badge_large)
