@@ -1,4 +1,6 @@
 # Tastyworks Node API
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks?ref=badge_shield)
+
 
 [![npm](https://img.shields.io/npm/v/tasty-works-api.svg?style=flat-square)](https://www.npmjs.com/package/tasty-works-api)
 [![David](https://img.shields.io/david/tylerfloyd/tastyworks.svg?style=flat-square)](https://david-dm.org/tylerfloyd/tastyworks)
@@ -127,3 +129,7 @@ TastyWorks.history('ACCOUNT_ID', '2018-01-01', '2018-01-05').then(history => con
 | Library                               | Licenses |
 | ------------------------------------- | -------- |
 | **[superagent (4.1.0)](#superagent)** | MIT      |
+
+## License
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks?ref=badge_large)
