@@ -2,6 +2,10 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks?ref=badge_shield)
 
 
+[![npm](https://img.shields.io/npm/v/tasty-works-api.svg?style=flat-square)](https://www.npmjs.com/package/tasty-works-api)
+[![David](https://img.shields.io/david/tylerfloyd/tastyworks.svg?style=flat-square)](https://david-dm.org/tylerfloyd/tastyworks)
+[![npm](https://img.shields.io/npm/dm/tasty-works-api.svg)](https://www.npmjs.com/package/tasty-works-api)
+
 NodeJS Framework for basic account information, balances, positions and orders with [TastyWorks's](https://www.tastyworks.com/) private API. This API has been reversed engineered. The stability and accuracy of this API cannot be garunteed.
 
 - [Features](#features)
@@ -27,7 +31,7 @@ NodeJS Framework for basic account information, balances, positions and orders w
 ## Installation
 
 ```bash
-$ npm install tastyworks --save
+$ npm install tasty-works-api --save
 ```
 
 ## Getting Started
@@ -43,7 +47,7 @@ Set account variables after authentication is complete so the variables can be u
 > **NOTE:** you must set the user object's `username` and `password` before other endpoints will work
 
 ```js
-const TastyWorks = require('tastyworks');
+const TastyWorks = require('tasty-works-api');
 const credentials = {
 	username: 'username',
 	password: 'password'
@@ -120,6 +124,12 @@ TastyWorks.history('ACCOUNT_ID', '2018-01-01', '2018-01-05').then(history => con
 - Fetch news for an equity
 - Current option prices
 
+## Direct Dependencies
+
+| Library                               | Licenses |
+| ------------------------------------- | -------- |
+| **[superagent (4.1.0)](#superagent)** | MIT      |
 
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftylerfloyd%2FTastyWorks?ref=badge_large)
