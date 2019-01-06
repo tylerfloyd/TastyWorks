@@ -1,5 +1,9 @@
 # Tastyworks Node API
 
+[![npm](https://img.shields.io/npm/v/tasty-works-api.svg?style=flat-square)](https://www.npmjs.com/package/tasty-works-api)
+[![David](https://img.shields.io/david/tylerfloyd/tastyworks.svg?style=flat-square)](https://david-dm.org/tylerfloyd/tastyworks)
+[![npm](https://img.shields.io/npm/dm/tasty-works-api.svg)](https://www.npmjs.com/package/tasty-works-api)
+
 NodeJS Framework for basic account information, balances, positions and orders with [TastyWorks's](https://www.tastyworks.com/) private API. This API has been reversed engineered. The stability and accuracy of this API cannot be garunteed.
 
 - [Features](#features)
@@ -25,7 +29,7 @@ NodeJS Framework for basic account information, balances, positions and orders w
 ## Installation
 
 ```bash
-$ npm install tastyworks --save
+$ npm install tasty-works-api --save
 ```
 
 ## Getting Started
@@ -41,7 +45,7 @@ Set account variables after authentication is complete so the variables can be u
 > **NOTE:** you must set the user object's `username` and `password` before other endpoints will work
 
 ```js
-const TastyWorks = require('tastyworks');
+const TastyWorks = require('tasty-works-api');
 const credentials = {
 	username: 'username',
 	password: 'password'
@@ -117,3 +121,9 @@ TastyWorks.history('ACCOUNT_ID', '2018-01-01', '2018-01-05').then(history => con
 - Position groupings
 - Fetch news for an equity
 - Current option prices
+
+## Direct Dependencies
+
+| Library                               | Licenses |
+| ------------------------------------- | -------- |
+| **[superagent (4.1.0)](#superagent)** | MIT      |

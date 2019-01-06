@@ -1,5 +1,5 @@
 {
-    "name": "tastyworks",
+    "name": "tasty-works-api",
     "version": "0.1.0",
     "description": "NodeJS API wrapper for Tastyworks API",
     "main": "index.js",
