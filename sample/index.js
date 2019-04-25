@@ -2,8 +2,8 @@
 
 const TastyWorks = require('../lib/index');
 const credentials = {
-    username: 'YOUR_USERNAME',
-    password: 'YOUR_PASSWORD'
+    username: process.env.TASTY_USERNAME,
+    password: process.env.TASTY_PASSWORD
 };
 
 // Set the username and password
@@ -25,22 +25,22 @@ TastyWorks.authorization()
         console.log('======= USER OBJECT =======');
         console.log(TastyWorks.getUser());
     })
-    .then(() => TastyWorks.balances('ACCOUNT_ID'))
+    .then(() => TastyWorks.balances(process.env.TASTY_ACCOUNT_ID))
     .then(balances => {
         console.log('======= ACCOUNT BALANCES =======');
         console.log(balances)
     })
-    .then(() => TastyWorks.positions('ACCOUNT_ID'))
+    .then(() => TastyWorks.positions(process.env.TASTY_ACCOUNT_ID))
     .then(positions => {
         console.log('======= ACCOUNT POSITIONS =======');
         console.log(positions)
     })
-    .then(() => TastyWorks.liveOrders('ACCOUNT_ID'))
+    .then(() => TastyWorks.liveOrders(process.env.TASTY_ACCOUNT_ID))
     .then(liveOrders => {
         console.log('======= ACCOUNT LIVEORDERS =======');
         console.log(liveOrders)
     })
-    .then(() => TastyWorks.history('ACCOUNT_ID', '01/01/2019', '01/05/2019'))
+    .then(() => TastyWorks.history(process.env.TASTY_ACCOUNT_ID, '01/01/2019', '01/05/2019'))
     .then(history => {
         console.log('======= ACCOUNT HISTORY =======');
         console.log(history)
