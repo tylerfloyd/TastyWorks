@@ -39,4 +39,9 @@ TastyWorks.authorization()
     .then(liveOrders => {
         console.log('======= ACCOUNT LIVEORDERS =======');
         console.log(liveOrders)
+    })
+	.then(() => TastyWorks.streamer())
+    .then(streamer => {
+        console.log('======= STREAMER =======');
+        console.log(streamer)
     });
