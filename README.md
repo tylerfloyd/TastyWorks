@@ -38,6 +38,13 @@ $ npm install tasty-works-api --save
 
 `/sample/index.js` has an example of each call configured. To run and see each response, replace `YOUR_USERNAME' and 'YOUR_PASSWORD' and 'ACCOUNT_ID' with your Tastyworks credentials. Then run`\$ cd sample && node index.js` in your Terminal.
 
+## Local Build
+Edit `package.json` with new version.
+```bash
+npm pack
+npm install tasty-works-api-0.1.x.tgz
+```
+
 ## API
 
 ### `User`
