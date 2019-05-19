@@ -1,6 +1,6 @@
 {
     "name": "tasty-works-api",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "NodeJS API wrapper for Tastyworks API",
     "main": "index.js",
     "scripts": {},
@@ -27,6 +27,6 @@
         "node": ">=6.0.0"
     },
     "dependencies": {
-        "superagent": "^5.0.2"
+        "superagent": "^5.0.5"
     }
 }
