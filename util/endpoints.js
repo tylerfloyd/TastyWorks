@@ -11,7 +11,7 @@ module.exports = {
     executeOrder: (account_id) => `${baseURL}/accounts/${account_id}/orders`,
     cancelOrder: (account_id, order_id) => `${baseURL}/accounts/${account_id}/orders/${order_id}`,
     streamer: () => `${baseURL}/quote-streamer-tokens`,
-	optionChain: (ticker) => `${baseURL}/option-chains/${ticker}/nested`,
+    optionChain: (ticker) => `${baseURL}/option-chains/${ticker}/nested`,
     history: (account_id) => `${baseURL}/accounts/${account_id}/transactions`
     // TODO: '{url}/dry-run'
 }
