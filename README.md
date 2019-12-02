@@ -64,7 +64,7 @@ const credentials = {
 	password: 'password'
 };
 
-TastyWorks.setAccount(credentials);
+TastyWorks.setUser(credentials);
 console.log(TastyWorks.getUser());
 ```
 
