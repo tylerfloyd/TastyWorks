@@ -44,4 +44,9 @@ TastyWorks.authorization()
     .then(history => {
         console.log('======= ACCOUNT HISTORY =======');
         console.log(history)
+    })
+    .then(() => TastyWorks.marketMetrics(['AMZN', 'SPX']))
+    .then(marketData => {
+        console.log('======= Market Data =======');
+        console.log(marketData)
     });
