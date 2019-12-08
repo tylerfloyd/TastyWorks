@@ -134,7 +134,7 @@ TastyWorks.history('ACCOUNT_ID', '2018-01-01', '2018-01-05').then(history => con
 Fetch the metrics for a list of tickers
 
 ```js
-TastyWorks.marketMetrics('ACCOUNT_ID', ['IRBT', 'TSLA']);
+TastyWorks.marketMetrics(['IRBT', 'TSLA']);
 ```
 
 ## TODOs
