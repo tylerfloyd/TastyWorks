@@ -36,7 +36,7 @@ TastyWorks.authorization()
         console.log(balances)
     })
     .then(() => TastyWorks.positions(TASTY_ACCOUNT_ID))
-    .catch(err => console.log(err.status))    
+    .catch(err => console.log(err.status))
     .then(positions => {
         console.log('======= ACCOUNT POSITIONS =======');
         console.log(positions)
@@ -57,4 +57,11 @@ TastyWorks.authorization()
     .then(marketData => {
         console.log('======= Market Data =======');
         console.log(marketData)
-    });
+    })
+    .then(() => TastyWorks.optionChain('TSLA'))
+    .then(chain => {
+        console.log('======= Option chain =======');
+        console.log(chain)
+        console.table(chain.items[0].expirations)
+    })
+

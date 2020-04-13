@@ -129,12 +129,48 @@ Fetch the accounts order history for a given time period. Date format is `yyyy-m
 TastyWorks.history('ACCOUNT_ID', '2018-01-01', '2018-01-05').then(history => console.log(history));
 ```
 
-### `MarketMetrics(ACCOUNT_ID, TICKERS)`
+### `MarketMetrics(TICKERS)`
 
 Fetch the metrics for a list of tickers
 
 ```js
 TastyWorks.marketMetrics(['IRBT', 'TSLA']);
+```
+
+### `OptionChain(TICKER)`
+
+Fetch the option chain for a ticker
+
+```js
+TastyWorks.optionChain(['TEAM']);
+```
+
+```
+┌─────────┬─────────────────┬─────────────────┬────────────────────┬─────────────────┬──────────────────────────────────────────────────────┐
+│ (index) │ expiration-type │ expiration-date │ days-to-expiration │ settlement-type │                       strikes                        │
+├─────────┼─────────────────┼─────────────────┼────────────────────┼─────────────────┼──────────────────────────────────────────────────────┤
+│    0    │    'Regular'    │  '2020-04-17'   │         5          │      'PM'       │ [ [Object], [Object], [Object], ... 254 more items ] │
+│    1    │    'Weekly'     │  '2020-04-24'   │         12         │      'PM'       │ [ [Object], [Object], [Object], ... 136 more items ] │
+│    2    │    'Weekly'     │  '2020-05-01'   │         19         │      'PM'       │ [ [Object], [Object], [Object], ... 81 more items ]  │
+│    3    │    'Weekly'     │  '2020-05-08'   │         26         │      'PM'       │ [ [Object], [Object], [Object], ... 41 more items ]  │
+│    4    │    'Regular'    │  '2020-05-15'   │         33         │      'PM'       │ [ [Object], [Object], [Object], ... 226 more items ] │
+│    5    │    'Weekly'     │  '2020-05-22'   │         40         │      'PM'       │ [ [Object], [Object], [Object], ... 41 more items ]  │
+│    6    │    'Weekly'     │  '2020-05-29'   │         47         │      'PM'       │ [ [Object], [Object], [Object], ... 26 more items ]  │
+│    7    │    'Regular'    │  '2020-06-19'   │         68         │      'PM'       │ [ [Object], [Object], [Object], ... 249 more items ] │
+│    8    │    'Regular'    │  '2020-07-17'   │         96         │      'PM'       │ [ [Object], [Object], [Object], ... 210 more items ] │
+│    9    │    'Regular'    │  '2020-08-21'   │        131         │      'PM'       │ [ [Object], [Object], [Object], ... 228 more items ] │
+│   10    │    'Regular'    │  '2020-09-18'   │        159         │      'PM'       │ [ [Object], [Object], [Object], ... 251 more items ] │
+│   11    │    'Regular'    │  '2020-10-16'   │        187         │      'PM'       │ [ [Object], [Object], [Object], ... 253 more items ] │
+│   12    │    'Regular'    │  '2020-11-20'   │        222         │      'PM'       │ [ [Object], [Object], [Object], ... 93 more items ]  │
+│   13    │    'Regular'    │  '2020-12-18'   │        250         │      'PM'       │ [ [Object], [Object], [Object], ... 88 more items ]  │
+│   14    │    'Regular'    │  '2021-01-15'   │        278         │      'PM'       │ [ [Object], [Object], [Object], ... 254 more items ] │
+│   15    │    'Regular'    │  '2021-03-19'   │        341         │      'PM'       │ [ [Object], [Object], [Object], ... 210 more items ] │
+│   16    │    'Regular'    │  '2021-06-18'   │        432         │      'PM'       │ [ [Object], [Object], [Object], ... 196 more items ] │
+│   17    │    'Regular'    │  '2021-09-17'   │        523         │      'PM'       │ [ [Object], [Object], [Object], ... 185 more items ] │
+│   18    │    'Regular'    │  '2022-01-21'   │        649         │      'PM'       │ [ [Object], [Object], [Object], ... 213 more items ] │
+│   19    │    'Regular'    │  '2022-03-18'   │        705         │      'PM'       │ [ [Object], [Object], [Object], ... 108 more items ] │
+│   20    │    'Regular'    │  '2022-06-17'   │        796         │      'PM'       │ [ [Object], [Object], [Object], ... 148 more items ] │
+└─────────┴─────────────────┴─────────────────┴────────────────────┴─────────────────┴──────────────────────────────────────────────────────┘
 ```
 
 ## TODOs
