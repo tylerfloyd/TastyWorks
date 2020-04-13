@@ -2,8 +2,8 @@
 
 const TastyWorks = require('../lib/index');
 const credentials = {
-    username: "rotaryguy", //process.env.TASTY_USERNAME,
-    password: "ZqW@PVGamo15!RU1S7K#" //process.env.TASTY_PASSWORD
+    username: process.env.TASTY_USERNAME,
+    password: process.env.TASTY_PASSWORD
 };
 
 let TASTY_ACCOUNT_ID;
